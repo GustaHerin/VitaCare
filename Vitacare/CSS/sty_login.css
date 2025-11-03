@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+#borda {
+    margin-top: 7%;
+    width: 420px;
+    background-color: transparent;
+    border: 2px solid darkgray;
+    border-radius: 20px;
+    color: black;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#logo {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width : 100%;
+    height: 154px;
+}
+
+.logotipagem {
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    text-align: center;
+    color: darkgray;
+}
+
+#input_usu-sen input {
+    position: relative;
+    width: 85%;
+    height: 45px;
+    margin: 30px 0;
+    background-color: transparent;
+    border: 2px solid darkgray;
+    border-radius: 40px;
+    outline: none;
+    font-size: 16px;
+    color: black;
+    padding: 20px 45px 20px 20px;
+}
+
+#input_usu-sen input::placeholder {
+    color: darkgray;
+}
+
+#input_usu-sen {
+    position: relative;
+}
+
+.bxs-user{
+    display: flex;
+    position: absolute;
+    color: darkgray;
+    right: 10px;
+    bottom: 205px;
+    font-size: 35px;;
+}
+
+.bxs-lock-alt{
+    display: flex;
+    position: absolute;
+    color: darkgray;
+    right: 10px;
+    bottom: 55px;
+    font-size: 35px;
+}
+
+#lem-esq {
+    display: flex;
+    justify-content: space-between;
+    color: darkgray;
+    font-size: 16px;
+    margin: -15px 0 15px;
+    position: relative;
+    z-index: 10;
+}
+
+#lem-esq input {
+    accent-color: grey;
+    margin-right: 5px;
+}
+#lem-esq a {
+    text-decoration: none;
+    color: darkgray;
+}
+
+#lem-esq a:hover {
+    text-decoration: underline;
+    color: black;
+    transition: 0.5s;
+}
+
+#login {
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: gray;
+    font-weight: 750;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+}
+
+#login:hover {
+    background-color: gray;
+    color:black;
+    transition: 0.5s;
+}
+.registro {
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0 15px;
+    color: darkgray;
+}
+
+.registro a {
+    text-decoration: none;
+    color: gray;
+    font-weight: 900;
+   
+}
+
+.registro a:hover {
+    color: black;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: transparent;
+    color: grey;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+
