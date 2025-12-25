@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    background: url("../Img/fundo.jpg") center/cover no-repeat fixed;
+    color: #333;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 0 50px;
+    gap: 40px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding: 10px 40px;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+#logo {
+    width: 60px;
+    max-width: 120px;
+    animation: fadeScale 0.8s ease-out;
+}
+
+#vit {
+    margin-left: 10px;
+    font-size: 28px;
+    color: #007bff;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+#content-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    max-width: 1200px;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+#apresentacao {
+    flex: 1.5;
+    background: rgba(255,255,255,0.75);
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 400px;
+}
+
+#apresentacao h1 {
+    font-size: 2.2em;
+    color: #007bff;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#apresentacao p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #444;
+    text-align: justify;
+}
+
+.lista-beneficios {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.lista-beneficios li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+#acao-usuario {
+    flex: 1;
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 400px;
+    animation: fadeScale 1s ease-out;
+}
+
+#acao-usuario h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#acao-usuario p {
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.botoes-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn-primary, .btn-outline {
+    width: 100%;
+    padding: 15px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background: white;
+    color: #007bff;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    background: #f8f9fa;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-outline:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+}
+
+
+@media (max-width: 900px) {
+    #content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #apresentacao, #acao-usuario {
+        width: 100%;
+        min-height: auto;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #666;
+    margin-top: auto;
+}
+
+footer span {
+    color: #007bff;
+    font-weight: bold;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeScale {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}

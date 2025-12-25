@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico | VitaCare</title>
+
+    <link rel="stylesheet" href="../CSS/sty_historico.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+<main>
+
+    <header>
+        <div class="logo-container">
+            <img src="../Img/logo_h.png" id="logo" alt="VitaCare">
+            <h1 id="vit">VitaCare</h1>
+        </div>
+
+    </header>
+
+    <section id="historico-container">
+
+        <div class="titulo-pag">
+            <i class='bx bx-history'></i>
+            <h1>Histórico de Consultas</h1>
+        </div>
+
+        <div class="lista-consultas">
+
+            <div class="card-consulta agendada">
+                <div class="data-box">
+                    <span class="dia">08</span>
+                    <span class="mes">Out</span>
+                </div>
+                <div class="info-box">
+                    <h3>Cardiologia</h3>
+                    <p><i class='bx bx-user-circle'></i> Dr. Paulo Henrique</p>
+                    <p><i class='bx bx-time-five'></i> 14:30 - Presencial</p>
+                </div>
+                <div class="status-box">
+                    <span class="badge azul">Agendada</span>
+                    <button class="btn-detalhes">Detalhes</button>
+                </div>
+            </div>
+
+            <div class="card-consulta concluida">
+                <div class="data-box">
+                    <span class="dia">12</span>
+                    <span class="mes">Set</span>
+                </div>
+                <div class="info-box">
+                    <h3>Dermatologia</h3>
+                    <p><i class='bx bx-user-circle'></i> Dra. Ana Silva</p>
+                    <p><i class='bx bx-check-circle'></i> Realizada com sucesso</p>
+                </div>
+                <div class="status-box">
+                    <span class="badge verde">Concluída</span>
+                    <button class="btn-detalhes">Ver Receita</button>
+                </div>
+            </div>
+
+            <div class="card-consulta cancelada">
+                <div class="data-box">
+                    <span class="dia">20</span>
+                    <span class="mes">Ago</span>
+                </div>
+                <div class="info-box">
+                    <h3>Ortopedia</h3>
+                    <p><i class='bx bx-user-circle'></i> Dr. Carlos Eduardo</p>
+                    <p><i class='bx bx-x-circle'></i> Cancelado pelo usuário</p>
+                </div>
+                <div class="status-box">
+                    <span class="badge vermelho">Cancelada</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="voltar">
+            <a href="../html/home.php" id="botao">Voltar para Início</a>
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2025 <span>VitaCare</span> — Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/sty_recuperação.css">
+    <title>Recuperar Senha - VitaCare</title>
+</head>
+<body>
+
+<header>
+    <img src="../Img/logo_h.png" id="logo" alt="VitaCare">
+    <h1 id="vit">VitaCare</h1>
+
+    <div class="header-nav">
+        <button type="button" class="btn-voltar" onclick="window.location.href='login.php'">Voltar ao Login</button>
+    </div>
+</header>
+
+<main>
+    <div id="recovery-box">
+        <h1>Recuperar Senha</h1>
+        <p class="subtitle">Esqueceu sua senha? Digite seu e-mail abaixo e enviaremos as instruções.</p>
+
+        <form id="form-recovery">
+
+            <div class="campo">
+                <label for="email">E-mail Cadastrado</label>
+                <input type="email" name="email" id="email" placeholder="exemplo@email.com" required>
+            </div>
+
+            <div id="acoes">
+                <button type="submit" id="btn-enviar">Enviar Link</button>
+            </div>
+
+        </form>
+    </div>
+</main>
+
+<footer>
+    <p>© 2025 <span>VitaCare</span> — Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>

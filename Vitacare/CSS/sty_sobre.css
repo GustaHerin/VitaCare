@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Mesma imagem de fundo das outras páginas */
+    background: url("../Img/fundo.jpg") center/cover no-repeat fixed;
+}
+
+#gotas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+#borda {
+    margin-top: 25%;
+    margin-bottom: 50px;
+    width: 600px; /* Mais largo que o login para caber o texto melhor */
+    max-width: 90%; /* Responsivo para celulares */
+    background-color: rgba(255, 255, 255, 0.85); /* Efeito vidro branco */
+    border: 2px solid #007bff; /* Azul VitaCare */
+    border-radius: 20px;
+    color: #333;
+    padding: 40px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+.logotipagem {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+    color: #007bff; /* Azul */
+    margin-bottom: 10px;
+}
+
+#conteudo-sobre p {
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-shadow:
+            2px 2px 0px darkgray;,
+-2px -2px 0px darkgray;,
+2px -2px 0px darkgray;,
+-2px 2px 0px darkgray;
+}
+
+#conteudo-sobre strong {
+    color: darkblue;
+}
+
+#home {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#home a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #007bff;
+    color: #007bff;
+    text-decoration: none;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+#home a:hover {
+    background: #007bff;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    color: #666;
+    font-size: 14px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+footer span {
+    color: #007bff;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    #borda {
+        padding: 25px;
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .logotipagem h1 {
+        font-size: 24px;
+    }
+
+    #conteudo-sobre {
+        font-size: 14px;
+        text-align: left;
+    }
+}
